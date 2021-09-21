@@ -1,0 +1,9 @@
+<?php
+    session_abort();
+    session_start();
+    unset($_SESSION['quiz_ended']);
+    unset($_SESSION['wtq']);
+                    unset($_SESSION['wtc']);
+    unset($_SESSION['wt_user_answers']);
+    header("Location:quiz_language.php");
+?>
